@@ -18,8 +18,8 @@ stats = {}
 
 for line in file_ref:
     line = line.rstrip()
-    line = line.split(" ")
-    for word in line:
+    words = line.split(" ")
+    for word in words:
         stats[word] = stats.get(word, 0) + 1
 
 file_ref.close()
